@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title>Alterar Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF"
+                [(ngModel)]="product.cpf" name="cpf">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="opCafe1"
+                [(ngModel)]="product.opCafe1" name="opCafe1">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="opCafe2"
+                [(ngModel)]="product.opCafe2" name="opCafe2">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updateProduct()" color="primary">
+        Atualizar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
